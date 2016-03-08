@@ -1,9 +1,55 @@
 <div class="jumbotron">
-  <h1>Bienvenido a ISSCOM</h1>
+  <h2>Bienvenido a ISSCOM</h2>
   <p class="lead">
     <img src="images/LogoISSCOM.png" alt="ISSCOM"><br>
     Siempre es un placer cuidar de la naturaleza.
   </p>
-  <p><a class="btn btn-sm btn-success" ng-href="#/"><span class="glyphicon glyphicon-user"></span>Iniciar Sesión</a></p>
+  <div ng-controller="MainCtrl" class="container">
+  <p><a class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span>Iniciar Sesión</a></p>
+  <div class="modal fade " id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+                <label for="email">Usuario</label>
+                <input type="email" class="form-control" id="email" placeholder="Usuario" />
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" />
+              </div>
+              <button type="submit" class="btn btn-default">Aceptar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a data-toggle="modal" data-target="#modal2" data-dismiss="modal">Olvidaste tu contraseña</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Recuperar Contraseña</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="form-group">
+                <label for="email">Correo electronico</label>
+                <input type="email" class="form-control" id="email" placeholder="Introduce tu correo" />
+              </div>
+              <button type="submit" class="btn btn-default">Aceptar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 

@@ -2,13 +2,13 @@
 
 ###*
  # @ngdoc function
- # @name ttInvernaderoApp.controller:AboutCtrl
+ # @name ttInvernaderoApp.controller:MainCtrl
  # @description
- # # AboutCtrl
+ # # MainCtrl
  # Controller of the ttInvernaderoApp
 ###
 angular.module 'ttInvernaderoApp'
-  .controller 'AboutCtrl', ->
+  .controller 'UserCtrl', ->
     @awesomeThings = [
       'HTML5 Boilerplate'
       'AngularJS'

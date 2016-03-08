@@ -14,6 +14,14 @@ body {
   padding: 0;
 }
 
+.enlinea{
+    display: inline;
+}
+
+#divBody{
+    background-image: url(file://images/parallax1.png)
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
